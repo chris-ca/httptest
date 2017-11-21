@@ -11,12 +11,12 @@ import config
 import templates
 
 from bs4 import BeautifulSoup
-logger = logging.getLogger('webcc')
+logger = logging.getLogger('httptest')
 logger.setLevel(logging.DEBUG)
 
 formatter = logging.Formatter("%(asctime)s\t%(levelname)s\t%(message)s")
 
-fh = logging.FileHandler('webcc.log')
+fh = logging.FileHandler('httptest.log')
 fh.setLevel(logging.DEBUG)
 
 ch = logging.StreamHandler(sys.stdout)
@@ -59,7 +59,7 @@ class TestRunner:
     average_response_time = 0
 
     def __init__(self):
-        self.logger = logging.getLogger('webcc')
+        self.logger = logging.getLogger('httptest')
         self.logger.info("URLtest starting. Cookies: " + str(cookies))
 
     def get(self, record):
