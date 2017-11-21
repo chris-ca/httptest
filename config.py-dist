@@ -1,0 +1,6 @@
+environments = {
+    'dev'  : 'COOKIEINFO',
+    'qa'   : 'COOKIEINFO',
+    'prod' : 'COOKIEINFO'
+}
+

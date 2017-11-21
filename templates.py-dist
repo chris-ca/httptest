@@ -1,0 +1,4 @@
+templates = [
+    {'name': 'details', 'test' : {'status_code' : 200, 'skip_robots' : False}, 'requestOptions' : {'allow_redirects':True, 'timeout' : 3}},
+    {'name': 'search', 'test' : {'status_code' : 200, 'skip_robots' : False}, 'requestOptions' : {'allow_redirects':True, 'timeout' : 6}}
+]
